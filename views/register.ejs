@@ -1,0 +1,18 @@
+<% include ./partials/header.ejs %>
+<div class="w-full h-screen bg-center bg-cover bg-[url('https://media.istockphoto.com/id/1902855148/photo/4k-abstract-background.jpg?s=612x612&w=0&k=20&c=r3i1Q1bBnKW9kEjHwfsbuQQRHaORJKHoWDYbYN37Jxs=')] flex items-center justify-center">
+    <div class="w-96 h-152 bg-zinc-100 px-4 py-5 rounded-[30px]">
+      <h1 class="text-2xl tracking-tight leading-none text-center font-semibold mt-2"> Create new account on URContent  </h1>
+      <br>
+      <form action="/register" method="post">
+        Enter gmail id : <input class="block w-full mt-2 mb-3 px-3 py-2" type="email" name="email" placeholder="Email">
+        Enter username : <input class="block w-full mt-2 mb-3 px-3 py-2" type="text" name="username" placeholder="Username">
+        Enter password :<input class="block w-full mt-2 mb-3 px-3 py-2" type="passsword" name="password" placeholder="Password">
+        <input class="block w-full mt-3 rounded-full py-2 bg-purple-800 text-white rounded-full" type="submit" value="Register"> 
+      </form>
+      <br>
+      <a class="text-purple-800 text-center inline-block w-full" href="/"> Already have an account? Login.</a>
+      <br>
+      <a class="text-purple-900 text-center inline-block mt-2 w-full font-semibold" href="/feed"> Go to feed directly </a>
+    </div>
+  </div>
+<% include ./partials/footer.ejs %>

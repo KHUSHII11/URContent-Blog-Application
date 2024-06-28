@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>URContent</title>
+  <link type="image/png" sizes="32x32" rel="icon" href="images/favicon1.png">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <% if(nav === true){ %>
+  <div class="w-full px-4 md:px-10 py-3 flex flex-col md:flex-row justify-between items-center bg-purple-900 text-white">
+    <h3 class="text-2xl font-semibold">URContent</h3>
+    <div class="flex flex-col md:flex-row gap-4 items-center mt-3 md:mt-0">
+      <a href="/profile" class="hover:underline">Home</a>
+      <a href="/feed" class="hover:underline">Feed</a>
+      <a href="/logout" class="px-3 py-2 hover:underline">Logout</a>
+      <button class="bg-zinc-100 px-5 py-3 mt-2 md:mt-0 md:ml-4">
+        <a class="px-3 py-1 text-black font-semibold" href="/register">Sign in</a>
+      </button>
+    </div>
+  </div>
+  <% } %>
+</body>
+</html>

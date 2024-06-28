@@ -1,0 +1,22 @@
+<% include ./partials/header.ejs %>
+
+<div class="bg-purple-200 w-full min-h-full">
+    <br>
+    <div class="cards flex flex-wrap gap-10 justify-center items-center md:ml-28">
+        <% posts.forEach(function(elem){ %>
+            <div class="card w-full md:w-96 h-64 mb-8 bg-zinc-100">
+                <div class="w-full h-48 md:w-80 mx-auto md:mx-8 mt-5 overflow-hidden flex justify-center items-center">
+                    <a href="/show/<%=elem.id %>" ><img class="w-full h-full rounded-md object-cover" 
+                    src='/images/uploads/<%= elem.image %>' alt=""> </a>
+                </div>
+                <div class="w-full md:w-96 mt-2 bg-zinc-100 overflow-hidden">
+                    <a href="/show/<%=elem.id %>" class="block text-xl mt-2 mb-2 mx-2 font-semibold text-black-600">
+                        <%= elem.caption %>
+                    </a>
+                </div>
+            </div>
+        <% }) %>
+    </div>
+</div>
+
+<% include ./partials/footer.ejs %>

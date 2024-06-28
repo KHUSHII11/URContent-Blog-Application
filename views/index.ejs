@@ -1,0 +1,27 @@
+<% include ./partials/header.ejs %>
+<div class="w-full h-screen bg-center bg-cover" style="background-image: url('https://media.istockphoto.com/id/1902855148/photo/4k-abstract-background.jpg?s=612x612&w=0&k=20&c=r3i1Q1bBnKW9kEjHwfsbuQQRHaORJKHoWDYbYN37Jxs=');">
+  <div class="w-full h-full flex items-center justify-center">
+    <div class="w-11/12 md:w-96 bg-zinc-100 px-4 py-5 rounded-lg shadow-lg">
+      <h1 class="text-2xl md:text-3xl tracking-tight leading-none text-center font-semibold mt-2 mb-4">Welcome to URContent</h1>
+      <form action="/login" method="post">
+        <label for="username" class="sr-only">Enter username</label>
+        <input id="username" class="block w-full mt-2 mb-3 px-3 py-2 border rounded-md" type="text" name="username" placeholder="Username">
+        
+        <label for="password" class="sr-only">Enter password</label>
+        <input id="password" class="block w-full mt-2 mb-3 px-3 py-2 border rounded-md" type="password" name="password" placeholder="Password">
+        
+        <a class="text-purple-800 inline-block mt-1" href="/forgot">Forgot password?</a>
+        
+        <input class="block w-full mt-3 px-3 py-2 bg-purple-800 text-white rounded-md cursor-pointer hover:bg-purple-700" type="submit" value="Login">
+        
+        <p class="mt-4 text-sm text-gray-600 text-center">By continuing, you agree to URContent's Terms of Service and acknowledge you've read our Privacy Policy.</p>
+      </form>
+      
+      <a class="block text-purple-800 text-center mt-4" href="/register">Don't have an account? Sign up now!</a>
+      <br>
+      <a class="block text-purple-800 font-semibold text-center" href="/feed"> Go to feed directly </a>
+    </div>
+  </div>
+  
+</div>
+<% include ./partials/footer.ejs %>
